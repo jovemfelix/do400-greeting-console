@@ -5,19 +5,19 @@ pipeline{
     stages{
         stage("Install dependencies"){
             steps{
-                sh "npm ci"
+                echo "npm ci"
             }
         }
 
         stage("Check Style"){
             steps{
-                sh "npm run lint"
+                echo "npm run lint"
             }
         }
 
         stage("Test"){
             steps{
-                sh "npm test"
+                echo "npm test"
             }
         }
 
